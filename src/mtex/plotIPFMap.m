@@ -20,7 +20,7 @@ function plotIPFMap(index, ebsd, grains)
   figure(index);
   
   % Plot the EBSD data showing crystallographic orientations
-  plot(ebsd, ebsd.orientations, 'coordinates', 'on', 'micronbar', 'off');
+  plot(ebsd, ebsd.orientations, 'coordinates', 'off', 'micronbar', 'off');
   hold on;
   
   % Plot the grain boundaries with specified line width

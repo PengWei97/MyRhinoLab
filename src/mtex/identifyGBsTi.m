@@ -14,7 +14,7 @@
 % - LowAngleGB: Identified low angle grain boundaries
 % - highAngleGB: Identified high angle grain boundaries
 
-function [twinBoundary1, twinBoundary2, twinBoundary3, twinBoundary4, LowAngleGB, highAngleGB] = identifyGBs(grains, ebsd)
+function [twinBoundary1, twinBoundary2, twinBoundary3, twinBoundary4, LowAngleGB, highAngleGB] = identifyGBsTi(grains, ebsd)
   % Extract grain boundaries
   gB = grains.boundary;
   

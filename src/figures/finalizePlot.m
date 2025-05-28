@@ -13,8 +13,8 @@ function finalizePlot(params, titles)
       'FontWeight', 'bold', 'Color', 'k', 'FontName', 'Times New Roman');
   ylabel(titles{2}, 'FontSize', params.fontSizeLabelTitle, ...
       'FontWeight', 'bold', 'Color', 'k', 'FontName', 'Times New Roman');
-  legend('FontSize', params.fontSizeLegend, 'TextColor', 'black', ...
-      'Location', 'best', 'NumColumns', 1);
-  set(gcf, 'Unit', 'centimeters', 'Position', [0, 0, params.width, params.height], 'Color', 'None');
+  legend('FontSize', params.fontSizeLegend, 'TextColor', 'black' ,'FontName', 'Times New Roman',...
+      'Location', 'northeast', 'NumColumns', 1, 'LineWidth', 1.0);
+  set(gcf, 'Unit', 'centimeters', 'Position', [10, 10, params.width, params.height], 'Color', 'None');
   set(gca, 'Color', 'None'); % Set axes background color to transparent
 end

@@ -1,4 +1,4 @@
-classdef VisualizationParams2
+classdef VisualizationParams
   properties
       fontSizeXY = 16;
       fontSizeLegend = 18;
@@ -13,10 +13,9 @@ classdef VisualizationParams2
   end
   
   methods
-      function obj = VisualizationParams2()
-          
-          obj.colors = {'#FE0AB6','#009f4d','#efdf00','#0085c3','#14d4f4','#f2af00','#00205b','#84bd00','#e4002b','#a51890',...
-                        '#b7295a','#009f4d','#efdf00','#0085c3','#14d4f4','#f2af00','#00205b','#84bd00','#e4002b','#a51890'};
+      function obj = VisualizationParams()
+          obj.colors = {'#0085c3','#14d4f4','#f2af00','#b7295a','#00205b','#009f4d','#84bd00','#efdf00','#e4002b','#a51890',...
+                        '#0085c3','#14d4f4','#f2af00','#b7295a','#00205b','#009f4d','#84bd00','#efdf00','#e4002b','#a51890'};
           obj.lineStyles = {'-', '--', ':', '-.','-', '--', ':', '-.','-', '--', ':', '-.'}; % '-' (默认值) | '--' | ':' | '-.' | 'none'
           obj.markers = {'o','>','s','h','p','*','^','v','d','<'};
       end

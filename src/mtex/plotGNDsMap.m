@@ -1,4 +1,4 @@
-function plotGNDsMap(index, ebsd, grains, rho)
+function plotGNDsMap(ebsd, grains, rho, minRho, maxRho)
   % plotIPFMap Display an Inverse Pole Figure (IPF) map with grain boundaries.
   %
   % This function creates a figure to display the IPF color mapping of an EBSD dataset
@@ -16,17 +16,11 @@ function plotGNDsMap(index, ebsd, grains, rho)
   % Example:
   %   plotIPFMap(1, ebsdData, grainsData);
 
-  % Create a new figure or activate the existing figure with the given index
-  figure(index);
-  
   % Plot the EBSD data showing crystallographic orientations
   plot(ebsd, rho, 'coordinates', 'off', 'micronbar', 'off');
   mtexColorMap('jet');
   set(gca, 'ColorScale', 'log');
-  % set(gca, 'CLim', [2.0e+12, 2.0e+16]);
-  % if index == 1
-  %   mtexColorbar('title', 'Dislocation Density (1/m^2)');
-  % end
+  set(gca, 'CLim', [minRho, maxRho]);
   
   hold on;
   
